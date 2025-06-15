@@ -8,7 +8,7 @@ import { removeUserInfo, userInfo } from "../redux/features/userSlice";
 import Loader from "./Loader";
 import NavLinks from "./navbar/NavLinks";
 import SearchBox from "./navbar/SearchBox";
-import logo from "../assets/logo.svg";
+import logo from "../assets/logo.png";
 
 const Layout = () => {
   const { data: profile, isError, isLoading } = useProfileQuery();

@@ -78,24 +78,29 @@ const Entries = () => {
 
   return (
     <div>
-      <div className="fixed bottom-20 z-10 left-[calc(100vw-7rem)]">
-        <AddEntry />
-      </div>
-      <div className="flex flex-wrap gap-10 justify-center my-10 min-h-[calc(100dvh-64px-52px-80px)] mx-7">
-        {entries.map((entry) => (
-          <EntryCard
-            key={entry._id}
-            id={entry._id}
-            date={entry.date}
-            title={entry.title}
-            mood={entry.mood}
-            content={entry.content}
-            updatedAt={entry.updatedAt}
-            highlightText={searchQuery}
-          />
-        ))}
-      </div>
-    </div>
+  {/* Floating Add Entry Button */}
+  <div className="fixed bottom-20 z-10 left-[calc(100vw-7rem)]">
+    <AddEntry />
+  </div>
+
+  {/* Grid Layout for Entry Cards */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center my-10 min-h-[calc(100dvh-64px-52px-80px)] mx-7">
+    {entries.map((entry) => (
+      <EntryCard
+        key={entry._id}
+        id={entry._id}
+        date={entry.date}
+        title={entry.title}
+        mood={entry.mood}
+        content={entry.content}
+        updatedAt={entry.updatedAt}
+        highlightText={searchQuery}
+      />
+    ))}
+  </div>
+</div>
+
+ 
   );
 };
 export default Entries;

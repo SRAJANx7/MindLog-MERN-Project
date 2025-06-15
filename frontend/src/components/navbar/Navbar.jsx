@@ -3,7 +3,7 @@ import NavLinks from "./NavLinks";
 import ThemeController from "../ThemeController";
 import NavProfile from "./NavProfile";
 import SearchBox from "./SearchBox";
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/logo.png";
 
 const Navbar = () => {
   return (
@@ -15,29 +15,15 @@ const Navbar = () => {
             aria-label="open sidebar"
             className="btn btn-square btn-ghost"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              className="inline-block h-6 w-6 stroke-current"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              ></path>
-            </svg>
           </label>
         </div>
         <Link className="btn btn-ghost text-xl pl-0" to="/">
-          <img className="w-10 h-10" src={logo} alt="logo" />
-          DayBook
+          <img className="w-50 h-15" src={logo} alt="logo" />
         </Link>
       </div>
 
-      <div className="navbar-center hidden flex-none lg:block">
-        <ul className="menu menu-horizontal">
+      <div className="hidden lg:flex items-center justify-center flex-none">
+        <ul className="menu menu-horizontal space-x-4">
           <NavLinks />
         </ul>
       </div>

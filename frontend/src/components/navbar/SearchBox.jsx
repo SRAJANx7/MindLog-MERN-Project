@@ -21,15 +21,15 @@ const SearchBox = ({ toggle }) => {
       <div className="join">
         <input
           name="search"
-          className="input join-item bg-base-100"
-          placeholder="Search Entries..."
+          className="input join-item bg-base-100 rounded-l-full border-0"
+          placeholder="Search Your Entries"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           autoComplete="off"
         />
         <button
           type="submit"
-          className="btn join-item rounded-r-full bg-base-100"
+          className="btn join-item rounded-r-full bg-base-100 hover:bg-blue-600 hover:text-white transition-colors duration-200"
         >
           Search
         </button>
