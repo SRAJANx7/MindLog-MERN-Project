@@ -4,7 +4,6 @@ require("dotenv").config();
 const connectDB = require("./config/database");
 const cookieParser = require("cookie-parser");
 import cors from 'cors';
-const cors = require("cors");
 const allowedOrigins = [
   'http://localhost:5173',
   'https://mind-log-mern-project.vercel.app'
