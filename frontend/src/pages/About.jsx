@@ -95,7 +95,7 @@ const About = () => {
         </p>
 
         <div className="text-center mt-5">
-          <a href="" target="_blank">
+          <a href="https://github.com/SRAJANx7/MindLog-MERN-Project" target="_blank">
             <button className="btn btn-primary">
               Explore the Code on GitHub
             </button>
